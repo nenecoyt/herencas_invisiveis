@@ -1,1 +1,156 @@
-a
+/* RESET */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-color: #0D0D0D;
+	color: #fff;
+}
+
+/* HEADER */
+header{
+	background: #000;
+	padding: 20px;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+header h1{
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
+/* SECTIONS */
+section{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+/* HERO */
+#hero{
+	background: #0D0D0D;
+    background-image: url("herancas/img/pt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero h1{
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+#hero p{
+	color: #ccc;
+	font-size: 1.2em;
+}
+
+/* REFLEXÃO */
+#reflexao{
+	background: #F2F2F2;
+	color: #111;
+    /* background-image: url("img/DB.jpg"); */
+}
+
+#reflexao h1{
+	color: #000;
+}
+
+/* CONFRONTO */
+#confronto{
+	background: #A4161A;
+}
+
+#confronto h1{
+	font-size: 2.2em;
+}
+
+/* DIA A DIA */
+#dia{
+	background: #FFFFFF;
+	color: #222;
+    
+    /* background-attachment: fixed; */
+}
+
+#dia h1{
+	color: #000;
+}
+
+/* DESCONSTRUÇÃO */
+#mudanca{
+	background: #2E8B57;
+}
+
+/* CTA */
+#cta{
+	background: #000;
+	color: #FFD60A;
+	background-image: url("herancas/img/fn.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px){
+	#cta{
+		width: 100%;
+		background-size: cover;
+	}
+}
+	
+#cta h2{
+	font-size: 2em;
+	margin: 10px 0;
+}
+
+/* TEXTOS */
+h1{
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+p{
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+
+/* MICRO FRASES */
+.small{
+	font-size: 0.9em;
+	opacity: 0.8;
+	margin-top: 15px;
+}
+
+/* FOOTER */
+footer{
+	background: #000;
+	text-align: center;
+	padding: 20px;
+	font-size: 0.9em;
+	color: #888;
+}
+
+/* ANIMAÇÃO */
+section{
+	animation: fade 1s ease-in;
+}
+
+@keyframes fade{
+	from{opacity: 0; transform: translateY(20px);}
+	to{opacity: 1; transform: translateY(0);}
+}

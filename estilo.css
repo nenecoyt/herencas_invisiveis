@@ -80,10 +80,6 @@ section{
 #dia{
 	background: #FFFFFF;
 	color: #222;
-     
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
 
@@ -91,9 +87,10 @@ section{
 	color: #000;
 }
 #dia img {
-width: 100%
-	height: auto;
-	display: block;
+	width: 100%;
+	height: 100vh;
+	/*display: block;*/
+	object-fit: cover;
 	
 }
 

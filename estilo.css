@@ -126,7 +126,6 @@ section{
 @media (max-width: 768px){
 	#mudanca img{
 		background-size: contain;
-		background-possition: top center;
 		background-repeat: no-repeat;
 		
 	}
@@ -135,7 +134,7 @@ section{
 #mudanca h1,
 #mudanca h2,
 #mudanca .small{
-		text-shadow: 0 2px rgba(0, 0, 0, 0.6)
+		text-shadow: 0 2px rgba(255, 255, 255, 0.6)
 	{
 
 /* CTA */

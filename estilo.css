@@ -80,7 +80,10 @@ section{
 #dia{
 	background: #FFFFFF;
 	color: #222;
-    
+    background-image: url("herancas/img/primeiro.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
 

@@ -94,10 +94,9 @@ section{
 }
 #dia img {
 	width: 100%;
-	max-width:500px;
-		height: auto;
+		height: 100vh;
 	object-fit: cover;
-	margin: 20px 0;
+	
 }
 @media (max-width: 768px){
 	#dia img{

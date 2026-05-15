@@ -110,6 +110,19 @@ section{
 #mudanca{
 	background: #2E8B57;
 }
+#mudanca img {
+	width: 100%;
+		height: 100vh;
+	object-fit: cover;
+	
+}
+@media (max-width: 768px){
+	#mudanca img{
+		height: auto;
+		object-fit: contain;
+	}
+	
+}
 
 /* CTA */
 #cta{

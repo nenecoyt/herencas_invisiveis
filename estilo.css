@@ -132,7 +132,10 @@ section{
 #cta{
 	background: #000;
 	color: #FFD60A;
-	background-image: url("herancas/img/fn.png"); 
+	background-image: url("herancas/img/fn.png");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
     
 }
 @media (min-width: 768px){

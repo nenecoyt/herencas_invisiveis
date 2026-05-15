@@ -108,6 +108,8 @@ section{
 
 /* DESCONSTRUÇÃO */
 #mudanca{
+	align-items: flex-start;
+	text-align: center;
 	background: rgba(0, 0, 0, 0.55);
 	background-image: url("herancas/img/negar-primeiro.jpeg");
 	background-size: cover;
@@ -116,7 +118,9 @@ section{
 	padding: 0;
 	gap: 12px;
 }
-
+#mudanca > *:first-child{
+	margin-top: 20px;
+}
 @media (max-width: 768px){
 	#mudanca {
 		width: 100%;
@@ -124,11 +128,6 @@ section{
 	}
 	
 } 
-#mudanca h1{
-	color: #000;
-	margin-bottom: 20px;
-}
-
 
 /* CTA */
 #cta{

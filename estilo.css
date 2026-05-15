@@ -108,7 +108,8 @@ section{
 
 /* DESCONSTRUÇÃO */
 #mudanca{
-	/*background: #2E8B57;*/
+	background: #2E8B57;
+	background-image: url("herancas/img/negar-primeiro.jpeg");
 }
 #mudanca img {
 	width: 100%;

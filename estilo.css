@@ -134,18 +134,17 @@ section{
 }
 #mudanca img {
 	width: 100%;
-		height: 100vh;
+	height: 100vh;
 	object-fit: cover;
 	
 }
-
 @media (max-width: 768px){
 	#mudanca img{
-		width: 100%;
-		background-size: cover;
+		height: auto;
+		object-fit: contain;
 	}
 	
-} 
+}
 
 /* CTA */
 #cta{

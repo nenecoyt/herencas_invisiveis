@@ -81,8 +81,11 @@ section{
 	background: #FFFFFF;
 	color: #222;
 	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
 	display: flex;
 	flex-direction: column;
+	padding: 20px;
     /* background-attachment: fixed; */
 }
 
@@ -91,9 +94,10 @@ section{
 }
 #dia img {
 	width: 100%;
-	height: 100vh;
+	max-width:500px;
+		height: auto;
 	object-fit: cover;
-	
+	margin: 20px 0;
 }
 @media (max-width: 768px){
 	#dia img{

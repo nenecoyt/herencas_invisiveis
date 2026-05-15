@@ -90,6 +90,13 @@ section{
 #dia h1{
 	color: #000;
 }
+#dia img {
+width: 100%
+	height: auto;
+	display: block;
+	
+}
+
 
 /* DESCONSTRUÇÃO */
 #mudanca{

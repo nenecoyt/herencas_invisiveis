@@ -110,41 +110,31 @@ section{
 #mudanca{
 	background: rgba(0, 0, 0, 0.55);
 	background-image: url("herancas/img/negar-primeiro.jpeg");
-	flex-direction: column;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	/*flex-direction: column;
 	justify-content: flex-start;
 	padding: 60px 20px 20px;
-	color: #fff;
+	color: #fff;*/ 
 	
 }
 
-/*#mudanca img {
-	width: 100%;
-		height: 100vh;
-	object-fit: cover;
-	
-} */
 @media (max-width: 768px){
-	#mudanca img{
-		background-size: contain;
-		background-repeat: no-repeat;
-		
+	#mudanca {
+		width: 100%;
+		background-size: cover;
 	}
 	
 } 
-#mudanca h1,
-#mudanca h2,
-#mudanca .small{
-		text-shadow: 0 2px rgba(255, 255, 255, 0.6)
-	{
+
 
 /* CTA */
 #cta{
 	background: #000;
 	color: #FFD60A;
 	background-image: url("herancas/img/fn.png"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 @media (min-width: 768px){
 	#cta{

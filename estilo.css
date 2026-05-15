@@ -107,10 +107,12 @@ section{
 }
 
 /* DESCONSTRUÇÃO */
-#mudanca::before{
+#mudanca{
 	background: rgba(0, 0, 0, 0.55);
 	background-image: url("herancas/img/negar-primeiro.jpeg");
-	content: "";
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 60px 20px 20px;
 	color: #fff;
 	
 }

@@ -83,6 +83,12 @@ section{
 #confronto{
 	background: #A4161A;
 }
+#confronto img{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	border-radius: 8px;
+}
 
 /* DIA */
 #dia{

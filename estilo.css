@@ -78,6 +78,22 @@ section{
 	background: #F2F2F2;
 	color: #111;
 }
+#reflexao video{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+@media (min-width: 768px){
+	#reflexao .container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		align-items: center;
+		text-align: left;
+	}
+}
 
 /* CONFRONTO */
 #confronto{

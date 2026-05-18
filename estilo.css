@@ -3,68 +3,80 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-	background-color: #0D0D0D;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #0D0D0D;
 	color: #fff;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 /* HEADER */
 header{
 	background: #000;
-	padding: 20px;
-	text-align: center;
+	padding: 15px 20px;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
 }
 
 header h1{
-	font-size: 28px;
+	font-size: clamp(18px, 3vw, 28px);
+	text-align: center;
 	letter-spacing: 2px;
 }
 
-/* SECTIONS */
+/* SECTION BASE */
 section{
-	min-height: 100vh;
+	padding: 60px 0;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	text-align: center;
-	padding: 40px 20px;
 }
 
 /* HERO */
 #hero{
-	background: #0D0D0D;
-    background-image: url("herancas/img/capa.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	min-height: 100vh;
+	background: url("herancas/img/capa.jpeg") center/cover no-repeat;
+	position: relative;
+}
+
+#hero::after{
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+#hero .container{
+	position: relative;
+	z-index: 2;
 }
 
 #hero h1{
-	font-size: 2.5em;
+	font-size: clamp(28px, 5vw, 48px);
 	margin-bottom: 20px;
 }
 
 #hero p{
 	color: #ccc;
-	font-size: 1.2em;
 }
 
-/* REFLEXÃO */
+/* REFLEXAO */
 #reflexao{
 	background: #F2F2F2;
 	color: #111;
-    /* background-image: url("img/DB.jpg"); */
-}
-
-#reflexao h1{
-	color: #000;
 }
 
 /* CONFRONTO */
@@ -72,123 +84,70 @@ section{
 	background: #A4161A;
 }
 
-#confronto h1{
-	font-size: 2.2em;
-}
-
-/* DIA A DIA */
+/* DIA */
 #dia{
-	background: #FFFFFF;
+	background: #fff;
 	color: #222;
-	min-height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-    /* background-attachment: fixed; */
 }
 
-#dia h1{
-	color: #000;
-}
-#dia img {
+#dia img{
 	width: 100%;
-		height: 100vh;
-	object-fit: cover;
-	
-}
-@media (max-width: 768px){
-	#dia img{
-		height: auto;
-		object-fit: contain;
-	}
-	
+	height: auto;
+	margin-top: 20px;
+	border-radius: 8px;
 }
 
-/* DESCONSTRUÇÃO */
-/*#mudanca{
-	background: rgba(0, 0, 0, 0.55);
-	background-image: url("herancas/img/negar-primeiro.jpeg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	padding: 0;
-	gap: 12px;
-}
-*/
+/* MUDANÇA */
 #mudanca{
-	background: #FFFFFF;
+	background: rgba(9, 121, 105, 0.85);
 	color: #222;
-	min-height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	background-color: rgba(9, 121, 105, 0.85);
-    
 }
 
-#mudanca h1{
-	color: #000;
-}
-#mudanca img {
+#mudanca img{
 	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	
-}
-@media (max-width: 768px){
-	#mudanca img{
-		height: auto;
-		object-fit: contain;
-	}
-	
+	height: auto;
+	margin-top: 20px;
+	border-radius: 8px;
 }
 
 /* CTA */
 #cta{
-	background: #000;
+	min-height: 60vh;
+	background: url("herancas/img/fn.png") center/cover no-repeat;
+	position: relative;
 	color: #FFD60A;
-	background-image: url("herancas/img/fn.png");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-    
-}
-@media (min-width: 768px){
-	#cta{
-		width: 100%;
-		background-size: cover;
-	}
-}
-	
-#cta h2{
-	font-size: 2em;
-	margin: 10px 0;
 }
 
-/* TEXTOS */
+#cta::after{
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.7);
+}
+
+#cta .container{
+	position: relative;
+	z-index: 2;
+}
+
+/* TIPOGRAFIA */
 h1{
-	font-size: 2em;
+	font-size: clamp(24px, 4vw, 36px);
 	margin-bottom: 15px;
 }
 
 h2{
-	font-size: 1.5em;
+	font-size: clamp(18px, 3vw, 24px);
 }
 
 p{
-	margin-top: 10px;
-	font-size: 1.1em;
+	font-size: clamp(14px, 2vw, 18px);
 }
 
-/* MICRO FRASES */
 .small{
 	font-size: 0.9em;
-	opacity: 0.8;
-	margin-top: 15px;
+	opacity: 0.7;
+	margin-top: 10px;
 }
 
 /* FOOTER */
@@ -196,16 +155,28 @@ footer{
 	background: #000;
 	text-align: center;
 	padding: 20px;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	color: #888;
 }
 
-/* ANIMAÇÃO */
-section{
-	animation: fade 1s ease-in;
-}
+/* DESKTOP AJUSTES */
+@media (min-width: 768px){
 
-@keyframes fade{
-	from{opacity: 0; transform: translateY(20px);}
-	to{opacity: 1; transform: translateY(0);}
+	section{
+		padding: 100px 0;
+	}
+
+	#dia .container,
+	#mudanca .container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		text-align: left;
+		align-items: center;
+	}
+
+	#dia img,
+	#mudanca img{
+		margin-top: 0;
+	}
 }
